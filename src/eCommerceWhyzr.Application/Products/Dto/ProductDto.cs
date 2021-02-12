@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text;
 using eCommerceWhyzr.Domain.Products;
 using static eCommerceWhyzr.Domain.Products.Product;
+using eCommerceWhyzr.Attributes.Dto;
 
 namespace eCommerceWhyzr.Products.Dto
 {
@@ -28,6 +29,7 @@ namespace eCommerceWhyzr.Products.Dto
         public float? Quantity { get; set; }
 
         public List<InfoInAnotherLanguageDto> InfoInAnotherLanguages { get; set; }
+        public List<AttributeDto> Attributes { get; set; }
         // public IFormFile Imge { get; set; }
 
     }
