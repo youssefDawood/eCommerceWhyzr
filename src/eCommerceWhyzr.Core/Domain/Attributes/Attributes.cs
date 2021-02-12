@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
+ 
  
 using eCommerceWhyzr.Domain.Products;
 
@@ -25,7 +25,7 @@ namespace eCommerceWhyzr.Domain.Attributes
         /// 3- String
         /// 4- Number
         /// </summary>
-        public int Type { get; set; }
+        public AttributeType Type { get; set; }
 
         public bool IsRequired { get; set; }
         public string StringValu { get; set; }
